@@ -2,8 +2,8 @@ import { useState } from 'react';
 import axios from 'axios';
 
 const LoginForm = () => {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+    const [username, setUsername] = useState('sabbir_ahmed');
+    const [password, setPassword] = useState('123456');
     const [error, setError] = useState('');
 
     const handleSubmit = async (event) => {
@@ -34,6 +34,7 @@ const LoginForm = () => {
                     <input
                         type="text"
                         value={username}
+                        // value="sabbir_ahmed"
                         onChange={(e) => setUsername(e.target.value)}
                         className="input"
                         placeholder="Username"
@@ -42,6 +43,7 @@ const LoginForm = () => {
                     <input
                         type="password"
                         value={password}
+                        // value="123456"
                         onChange={(e) => setPassword(e.target.value)}
                         className="input"
                         placeholder="Password"
